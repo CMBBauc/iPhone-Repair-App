@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/iPhone-Repair-App/static/css/main.0e65cc4e.css",
-    "main.js": "/iPhone-Repair-App/static/js/main.53bff491.js",
+    "main.css": "/iPhone-Repair-App/static/css/main.57cf53a6.css",
+    "main.js": "/iPhone-Repair-App/static/js/main.8264541d.js",
     "static/js/787.30a69818.chunk.js": "/iPhone-Repair-App/static/js/787.30a69818.chunk.js",
     "index.html": "/iPhone-Repair-App/index.html",
-    "main.0e65cc4e.css.map": "/iPhone-Repair-App/static/css/main.0e65cc4e.css.map",
-    "main.53bff491.js.map": "/iPhone-Repair-App/static/js/main.53bff491.js.map",
+    "main.57cf53a6.css.map": "/iPhone-Repair-App/static/css/main.57cf53a6.css.map",
+    "main.8264541d.js.map": "/iPhone-Repair-App/static/js/main.8264541d.js.map",
     "787.30a69818.chunk.js.map": "/iPhone-Repair-App/static/js/787.30a69818.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e65cc4e.css",
-    "static/js/main.53bff491.js"
+    "static/css/main.57cf53a6.css",
+    "static/js/main.8264541d.js"
   ]
 }
