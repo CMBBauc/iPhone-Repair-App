@@ -1,7 +1,7 @@
 {
   "name": "iphonereapirfrontend",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/iPhone-Repair-App",
+  "homepage": "https://CMBbauc.github.io/iPhone-Repair-App",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.1",
