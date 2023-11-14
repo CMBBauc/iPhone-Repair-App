@@ -1,0 +1,35 @@
+.delete-iphone-container {
+    background-color: #ff3b30;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.delete-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.id-dropdown {
+    margin: 50px;
+    padding: 25px;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.delete-button{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px black;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.delete-button:hover {
+    transform: scale(0.98);
+    box-shadow: 0 0 0 2px gray;
+}
+

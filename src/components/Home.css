@@ -1,0 +1,44 @@
+body {
+    font-family: 'Roboto';
+}
+
+
+.iphone-container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.iphone-name {
+    font-size: 1vh;
+}
+
+.iphone-model{
+    font-size: large;
+    font-style: bold;
+}
+
+.iphone-model-base {
+    height: 50px;
+    background-color: blue;
+}
+
+.iphone-image {
+    border-radius: 25px;
+    height: auto;
+    margin-left: 55%;
+    margin: auto;
+}
+
+
+.iphone-container:hover {
+    background-color: #0a84ff;
+    transform: scale(1.05);
+    color: white;
+    cursor: pointer;
+}
+
+

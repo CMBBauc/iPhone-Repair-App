@@ -1,0 +1,80 @@
+
+.form-container {
+    background-color: #0077ed;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.form-delete-container {
+    background-color: red;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input[type=text] {
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+.create-iphone-button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px black;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+}
+
+label {
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+.create-iphone-button:hover {
+    box-shadow: 0 0 0 2px gray;
+    cursor:pointer;
+    transform: scale(0.98);
+}
+
+.mobile-create-text:hover {
+    font-size: 2.2rem;
+    margin: 30px;
+}
+
+.mobile-create-text {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-container {
+        display: none;
+    }
+    .mobile-create {
+        display: flex;
+        justify-content: center;
+        background-color: #0077ed;
+        border-radius: 25px;
+        padding: 10px;
+        margin: 20px;
+    }
+    .mobile-create-text {
+        display: block;
+        font-size: 3rem;
+        font-weight: bolder;
+        color: white;
+    }
+
+}
