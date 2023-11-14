@@ -1,10 +1,12 @@
 import './App.css';
+//import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import api from './api/axiosConfig';
 import Home from './components/Home';
 import Nav from './components/Nav';
 import CreateiPhone from './components/CreateiPhone';
 import DeleteiPhone from './components/DeleteiPhone';
+
 
 function App() {
 

@@ -18,7 +18,6 @@ export default function CreateiPhone(){
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
 
         axios.post("http://localhost:8080/api/createIPhone", iphone)
         .then((response) => {
@@ -29,13 +28,18 @@ export default function CreateiPhone(){
         });
     };
 
+    const mobileHandleClick = () => {
+        document.getElementById("form").style.display = "flex";
+        document.getElementById("plus").style.display = "none";
+    }
+
     return (
         <>
-        <div className="mobile-create">
-            <p className="mobile-create-text">+</p>
-        </div>
         <div className="form-container">
-            <form className="form" onSubmit={(e) => handleSubmit(e)}>
+            <div id="plus" onClick={mobileHandleClick} className="mobile-form-container">
+                <div className="mobile-create-text">+</div>
+            </div>
+            <form id="form" className="form" onSubmit={(e) => handleSubmit(e)}>
                 <label htmlFor="Id"> ID </label>
                 <input
                     required

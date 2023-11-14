@@ -37,6 +37,8 @@ li {
 
 .hamburger-icon {
     display: none;
+    font-size: 3rem;
+    font-weight: bolder;
 }
 
 .logo:hover {
@@ -50,6 +52,8 @@ li:hover {
     cursor:pointer;
     color: rgb(10,132,255);
 }
+
+
 @media only screen and (max-width: 600px) {
 
 

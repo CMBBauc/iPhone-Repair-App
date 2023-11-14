@@ -12,7 +12,7 @@ const Nav = () => {
             <li>Repairs</li>
             <li>search icon</li>
         </ul>
-        <div className='hamburger-icon'>hbicons</div>
+        <div className='hamburger-icon'> = </div>
     </nav>
 
   )

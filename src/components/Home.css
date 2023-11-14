@@ -3,7 +3,7 @@ body {
 }
 
 
-.iphone-container {
+#ip-co {
     display: flex;
     justify-content: flex-start;
     background-color: lightgray;
@@ -12,33 +12,51 @@ body {
     margin: 20px;
 }
 
-.iphone-name {
-    font-size: 1vh;
+#ex-ip-co {
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 50px;
+    margin: 20px;
 }
+
 
 .iphone-model{
     font-size: large;
     font-style: bold;
 }
-
-.iphone-model-base {
-    height: 50px;
-    background-color: blue;
-}
-
 .iphone-image {
     border-radius: 25px;
     height: auto;
-    margin-left: 55%;
-    margin: auto;
+}
+
+.expanded-repairs-list > ul {
+    flex-direction: column;
 }
 
 
-.iphone-container:hover {
+/*  hover css */
+
+#ip-co:hover {
     background-color: #0a84ff;
     transform: scale(1.05);
     color: white;
     cursor: pointer;
 }
+
+.expanded-repairs-list > ul> li:hover{
+    color: brown;
+}
+
+#ex-ip-co:hover {
+    background-color: #0a84ff;
+    transform: scale(1.05);
+    color: white;
+    cursor: pointer;   
+}
+
+
 
 

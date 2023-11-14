@@ -59,10 +59,11 @@ label {
 }
 
 @media only screen and (max-width: 600px) {
-    .form-container {
+    #form {
         display: none;
     }
-    .mobile-create {
+
+    .mobile-form-container {
         display: flex;
         justify-content: center;
         background-color: #0077ed;
