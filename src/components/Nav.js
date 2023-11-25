@@ -1,6 +1,6 @@
 import React from 'react'
 import './Nav.css';
-
+import { Link } from 'react-router-dom';
 const Nav = () => {
   return (
     <nav className='nav-container'>
@@ -8,7 +8,7 @@ const Nav = () => {
             <img alt="apple repair logo" src="https://www.svgrepo.com/show/69341/apple-logo.svg"></img>
         </a>
         <ul>
-            <li>iPhones</li>
+            <Link to="http://localhost:3000/Home"><li>iPhones</li></Link>
             <li>Repairs</li>
             <li>search icon</li>
         </ul>
