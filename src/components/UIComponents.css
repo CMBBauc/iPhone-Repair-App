@@ -1,0 +1,18 @@
+.ipr-button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px black;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+}
+
+/* hover css*/
+
+.ipr-button:hover {
+    box-shadow: 0 0 0 2px gray;
+    cursor:pointer;
+    transform: scale(0.98);
+}

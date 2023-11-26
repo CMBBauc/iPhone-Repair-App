@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { useState } from "react";
 import axios from "axios";
-import './CreateiPhone.css'
+import './CreateiPhone.css';
+import './UIComponents.css';
 
 export default function CreateiPhone(){
     const [iphone, setiPhone] = useState({
@@ -116,19 +117,21 @@ export default function CreateiPhone(){
                 >
                 </input>
                 <button
-                    className="create-iphone-button"
+                    className="ipr-button"
                     type="submit">
                     + Create iPhone
                 </button>
 
             </form>
             <form onSubmit={handleReset}>
-                <input onChange={handleResetChange}></input>
-                <button  type="submit" className="create-iphone-button">
-                    reset latest
+                <select className="reset-container" onChange={handleResetChange}>
+                    <option>true</option>
+                    <option>false</option>
+                </select>
+                <button  type="submit" className="ipr-button">
+                    Reset Latest
                 </button>
             </form>
-
         </div>
         </>
     )

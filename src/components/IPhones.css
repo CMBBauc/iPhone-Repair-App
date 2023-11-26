@@ -5,12 +5,13 @@ body {
 
 #ip-co {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: lightgray;
     border-radius: 25px;
     padding: 50px;
     margin: 20px;
 }
+
 
 #ex-ip-co {
     display: none;
@@ -22,6 +23,9 @@ body {
     margin: 20px;
 }
 
+.text-container {
+    text-align: center;
+}
 
 .iphone-model{
     font-size: large;
@@ -29,6 +33,7 @@ body {
 }
 .iphone-image {
     border-radius: 25px;
+    padding: 25px;
     height: auto;
 }
 

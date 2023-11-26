@@ -1,13 +1,13 @@
 import './App.css';
-//import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import {  BrowserRouter, Routes, Route } from 'react-router-dom';
 import api from './api/axiosConfig';
-import Home from './components/Home';
 import Nav from './components/Nav';
-import CreateiPhone from './components/CreateiPhone';
-import DeleteiPhone from './components/DeleteiPhone';
+import Footer  from './components/Footer';
 import HomePage from './components/HomePage';
-import { Routes, Route } from 'react-router-dom';
+import IPhonesLayout from './pages/IPhonesLayout';
+import BlogLayout from './pages/BlogLayout';
+import RepairsLayout from './pages/RepairsLayout';
 
 
 function App() {
@@ -34,13 +34,16 @@ function App() {
   //<HomePage iphones={iphones}></HomePage>
   return (
     <>
-      <Nav></Nav>
-      <HomePage iphones={iphones}></HomePage>
-      <div className='main-container'>
-        <Home iphones={iphones}></Home>
-        <CreateiPhone />
-        <DeleteiPhone iphones={iphones}/>
-      </div>
+      <BrowserRouter>
+        <Nav></Nav>
+        <Routes>
+          <Route path ="/" element={<HomePage/>} />
+          <Route path ="/iPhones" element={<IPhonesLayout iphones={iphones}/>} />
+          <Route path="/repairs" element ={<RepairsLayout/>}/>
+          <Route path="/blog" element={<BlogLayout/>}/>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }

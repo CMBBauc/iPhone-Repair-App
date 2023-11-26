@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
-import './DeleteiPhone.css'
+import React, { useState } from 'react';
+import './DeleteiPhone.css';
+import './UIComponents.css';
 import axios from "axios";
 
 const DeleteiPhone = ({iphones}) => {
@@ -7,8 +8,6 @@ const DeleteiPhone = ({iphones}) => {
     const [deletediphone, setDeletedIPhone] = useState();
 
     const handleDelete  = async (e) => {
-        //e.preventDefault();
-
         await axios.delete(`http://localhost:8080/api/deleteIPhone?id=${deletediphone}`)
         .then((response) => {
             console.log(response.status, response.data);
@@ -20,11 +19,9 @@ const DeleteiPhone = ({iphones}) => {
 
     const deleteOnChange = (e) => {
         setDeletedIPhone(e.target.value);
-
     }
 
     return (
-
         <div className='delete-iphone-container'>
             <form onSubmit={(e) => handleDelete(e)} className='delete-form'>
                 <select className='id-dropdown' onChange={deleteOnChange}>
@@ -32,7 +29,7 @@ const DeleteiPhone = ({iphones}) => {
                         <option className='dropdown-block' value={iphone.id}>{iphone.id}</option>
                     )}
                 </select>
-                <button  type="submit" className='delete-button'>Delete</button>
+                <button  type="submit" className='ipr-button'>Delete</button>
             </form>
         </div>
       )
