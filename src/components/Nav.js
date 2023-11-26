@@ -5,7 +5,7 @@ const Nav = () => {
  
   return (
     <nav className='nav-container'>
-        <a className="logo" href="http://localhost:3000" >
+        <a className="logo" href="/" >
             <img
               alt="apple repair logo"
               src="https://www.svgrepo.com/show/69341/apple-logo.svg"
@@ -14,8 +14,8 @@ const Nav = () => {
         </a>
         <ul>
             <Link to="/iPhones"><li>iPhones</li></Link>
-            <Link to="http://localhost:3000/repairs"><li>Repairs</li></Link>
-            <Link to="http://localhost:3000/blog"><li>Blog</li></Link>
+            <Link to="/repairs"><li>Repairs</li></Link>
+            <Link to="/blog"><li>Blog</li></Link>
             <li>search icon</li>
         </ul>
         <div className='hamburger-icon'> = </div>
